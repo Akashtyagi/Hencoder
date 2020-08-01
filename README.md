@@ -5,8 +5,7 @@
 [![Python](https://img.shields.io/badge/Python-v3.0+-BLUE.svg)](https://www.python.org/)
 [![GitHub release](https://img.shields.io/badge/release-v1.0-BLUE.svg)](https://github.com/Akashtyagi08/Hencoder/releases)
 ![Build Status](https://travis-ci.org/anfederico/Clairvoyant.svg?branch=master)
-![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
-[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)]((https://test.pypi.org/project/Hencoder/))
+[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://github.com/Akashtyagi08/Hencoder/issues)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 
 ------------------------------------------------
