@@ -27,6 +27,6 @@ if missing_dependencies:
 del hard_dependencies, dependency, missing_dependencies
 
 from code.api import (
-    encode,
+    encode, 
     decode
     )
