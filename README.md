@@ -11,7 +11,7 @@
 ### Hencoder is a simple encoder based on greedy algorithim [Hauffman encoding](https://en.wikipedia.org/wiki/Huffman_coding).
 
 
-# ```pip install Hencoder```
+### ```pip install Hencoder```
 
 #### This package can be used to:
 
