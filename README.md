@@ -5,11 +5,13 @@
 [![Python](https://img.shields.io/badge/Python-v3.0+-BLUE.svg)](https://www.python.org/)
 [![GitHub release](https://img.shields.io/badge/release-v1.0-BLUE.svg)](https://github.com/Akashtyagi08/Hencoder/releases)
 ![Build Status](https://travis-ci.org/anfederico/Clairvoyant.svg?branch=master)
-[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://github.com/Akashtyagi08/Hencoder/issues)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 
 ------------------------------------------------
 ### Hencoder is a simple encoder based on greedy algorithim [Hauffman encoding](https://en.wikipedia.org/wiki/Huffman_coding).
+
+
+### ```pip install Hencoder```
 
 #### This package can be used to:
 
