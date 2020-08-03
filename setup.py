@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="Hencoder",
-    version="0.0.6",
+    version="0.5",
     author="Akash Tyagi",
     author_email="akashtyagi.ta@gmail.com",
     description="An text encoder based on Hauffman Encoding.",

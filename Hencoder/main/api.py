@@ -199,7 +199,6 @@ def _decode_encoding(key, encoding):
     """
     decoded_text = ""
     current_node = decoded_hauffman_tree
-    char = encoding_array[5]
     for char in encoding_array:
         if char == "0":
             current_node = current_node.left
