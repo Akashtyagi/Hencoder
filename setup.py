@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="Hencoder",
-    version="0.0.5",
+    version="0.0.6",
     author="Akash Tyagi",
     author_email="akashtyagi.ta@gmail.com",
     description="An text encoder based on Hauffman Encoding.",
@@ -18,7 +18,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.0',
-    test_suite='nose.collector',
-    tests_require=['nose'],
+    python_requires=">=3.0",
+    test_suite="nose.collector",
+    tests_require=["nose"],
 )
