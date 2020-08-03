@@ -26,7 +26,7 @@ if missing_dependencies:
     )
 del hard_dependencies, dependency, missing_dependencies
 
-from code.api import (
+from Hencoder.main.api import (
     encode, 
     decode
     )

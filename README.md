@@ -25,9 +25,10 @@ This file can be
 
 # Whats Great about Hencoder ? :star2:	
 
-> Hencoder makes sure that nobody else can decode your text other than you.
+> Hencoder makes sure that nobody else can decode your text other than you. :superhero:
 
 Hencoder provides a feature to encode your input using a ```secret key```.
+
 This ```secret key``` ensures that no-one else can decode your encoded text until they know the key used for encoding the text.
 
 This secret key gets added to your original text, therefore correct decoding is only possible when user enters same key that was used while encoding.
@@ -39,13 +40,14 @@ This key can be any value in range of `key = 1-100 ` .
 >   You can super encode your already encoded file with another key to make it even more difficult for someone to crack it.
 
 
-# How to Use Hencoder ?
+# How to Use Hencoder ? :book:
+
 
 It's as smooth as butter.
 
 * Encoding/Decoding can be done in 2 ways:
-	1. Encoding/Decoding an input text
-	2. Encoding/Decoding an input file
+	1. Encoding/Decoding a **text**
+	2. Encoding/Decoding a **file**
 
 
 ```python
