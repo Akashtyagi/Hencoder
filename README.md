@@ -8,7 +8,7 @@
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 
 ------------------------------------------------
-### Hencoder is a simple encoder based on greedy algorithim [Hauffman encoding](https://en.wikipedia.org/wiki/Huffman_coding).
+### Hencoder is a simple encoder based on greedy algorithm [Hauffman encoding](https://en.wikipedia.org/wiki/Huffman_coding).
 
 
 ### ```pip install Hencoder```
@@ -26,7 +26,7 @@ This file can be
 ![Hencoder](https://github.com/Akashtyagi08/Hencoder/blob/master/demo/inplace.gif)
 ------------------------------------------------
 
-# Whats Great about Hencoder ? :star2:	
+# What's Great about Hencoder ? :star2:	
 
 > Hencoder makes sure that nobody else can decode your text other than you. :superhero:
 
@@ -34,7 +34,7 @@ Hencoder provides a feature to encode your input using a ```secret key```.
 
 This ```secret key``` ensures that no-one else can decode your encoded text until they know the key used for encoding the text.
 
-This secret key gets added to your original text, therefore correct decoding is only possible when user enters same key that was used while encoding.
+This secret key gets added to your original text, therefore correct decoding is only possible when the user enters the same key that was used while encoding.
 
 This key can be any value in range of `key = 1-100 ` .
 
