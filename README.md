@@ -23,6 +23,7 @@ This file can be
 * Source code along with indentations.
 * Any other text that is readable by python.
 
+![Hencoder](https://github.com/Akashtyagi08/Hencoder/blob/master/demo/inplace.gif)
 ------------------------------------------------
 
 # Whats Great about Hencoder ? :star2:	
@@ -41,7 +42,7 @@ This key can be any value in range of `key = 1-100 ` .
 >
 >   You can super encode your already encoded file with another key to make it even more difficult for someone to crack it.
 
-
+![Key](https://github.com/Akashtyagi08/Hencoder/blob/master/demo/variable_key.gif)
 # How to Use Hencoder ? :book:
 
 
@@ -69,3 +70,4 @@ Hencoder.decode(text="", key=0, path=None, inplace=False)
 * inplace: When coverting file, modify file inplace. 
 		{Default= False} (Optional)
 ```
+![File Encoding](https://github.com/Akashtyagi08/Hencoder/blob/master/demo/Hencoder.gif)
