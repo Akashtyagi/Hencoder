@@ -2,7 +2,7 @@ from collections import Counter
 from queue import PriorityQueue
 
 
-class HauffmanNode:
+class HuffmanNode:
     def __init__(self, char, frequency=0, left=None, right=None):
         self.char = char
         self.frequency = frequency
@@ -47,9 +47,9 @@ def _encode_text(key, text):
     word_frequencies = Counter(text)
     queue = PriorityQueue()  # Queue Initialisation
 
-    # Creating Hauffman Tree
+    # Creating Huffman Tree
     for word, freq in word_frequencies.items():  # Creates a priority queue
-        queue.put(HauffmanNode(char=word, frequency=freq))
+        queue.put(HuffmanNode(char=word, frequency=freq))
 
     encoding_table = {}
 
@@ -58,7 +58,7 @@ def _encode_text(key, text):
         left_node, right_node = queue.get(), queue.get()
         # Place a empty node above chars
         queue.put(
-            HauffmanNode(
+            HuffmanNode(
                 char=None,
                 frequency=(left_node.frequency + right_node.frequency),
                 left=left_node,
@@ -66,18 +66,18 @@ def _encode_text(key, text):
             )
         )
 
-    hauffmanHead = queue.get()  # Instance of Hauffman tree
+    HuffmanHead = queue.get()  # Instance of Huffman tree
 
-    _create_encoding(key, hauffmanHead, "", encoding_table)
+    _create_encoding(key, HuffmanHead, "", encoding_table)
 
     # Input text encoding
     encoded_text_code = ""
     for s in text:
         encoded_text_code += encoding_table[chr(ord(s) + key)]
 
-    # Encoding of Hauffman tree
+    # Encoding of Huffman tree
     tree_encoding = ""
-    tree_encoding = _create_tree_encoding(key, hauffmanHead, tree_encoding)
+    tree_encoding = _create_tree_encoding(key, HuffmanHead, tree_encoding)
 
     """
     Suppose the scenario:
@@ -122,9 +122,9 @@ def _encode_text(key, text):
 # =============================================================================
 
 
-def _decode_hauffman_tree(encoding_array):
+def _decode_Huffman_tree(encoding_array):
     """
-    Extracts Hauffman tree from input encoding.
+    Extracts Huffman tree from input encoding.
     
     Approach:
     --------
@@ -145,18 +145,18 @@ def _decode_hauffman_tree(encoding_array):
         for _ in range(8):
             char += encoding_array[0]
             del encoding_array[0]
-        return HauffmanNode(chr(int(char, 2)))
-    return HauffmanNode(
+        return HuffmanNode(chr(int(char, 2)))
+    return HuffmanNode(
         None,
-        left=_decode_hauffman_tree(encoding_array),
-        right=_decode_hauffman_tree(encoding_array),
+        left=_decode_Huffman_tree(encoding_array),
+        right=_decode_Huffman_tree(encoding_array),
     )
 
 
 def _decode_encoding(key, encoding):
     # First we extract the Tree Encoding
     encoding_array = list(encoding)
-    decoded_hauffman_tree = _decode_hauffman_tree(encoding_array)
+    decoded_Huffman_tree = _decode_Huffman_tree(encoding_array)
     # Removing extra binarry added for file balancing
     """
     Suppose the scenario:
@@ -188,17 +188,17 @@ def _decode_encoding(key, encoding):
     Now we iterate through encoded_text and follow below instructions:
         
         If encoded-bit == 0:
-            Go to left of hauffman tree
+            Go to left of Huffman tree
                 If left-child of Current root is not None, means we have reached leaf,
-                    Extract Value, set root to initial Hauffman tree again.
+                    Extract Value, set root to initial Huffman tree again.
         
         If encoded-bit == 1:
-            Go to right of hauffman tree
+            Go to right of Huffman tree
                 If right-child of Current root is not None, means we have reached leaf,
-                    Extract Value, set root to initial Hauffman tree again.
+                    Extract Value, set root to initial Huffman tree again.
     """
     decoded_text = ""
-    current_node = decoded_hauffman_tree
+    current_node = decoded_Huffman_tree
     for char in encoding_array:
         if char == "0":
             current_node = current_node.left
@@ -207,7 +207,7 @@ def _decode_encoding(key, encoding):
 
         if current_node.char is not None:
             decoded_text += chr(ord(current_node.char) - key)
-            current_node = decoded_hauffman_tree
+            current_node = decoded_Huffman_tree
 
     return decoded_text
 
@@ -238,7 +238,7 @@ def _filehandling(path, inplace, op):
 
 def encode(text="", key=0, path=None, inplace=False):
     """
-    Ecode any text/file into Hauffman encoding.
+    Ecode any text/file into Huffman encoding.
     
     Input Parametes
     ---------------
@@ -269,7 +269,7 @@ def encode(text="", key=0, path=None, inplace=False):
 
 def decode(text="", key=0, path=None, inplace=False):
     """
-    Decode any Hauffman encoded text/file into original text.
+    Decode any Huffman encoded text/file into original text.
     
     Input Parametes
     ---------------
