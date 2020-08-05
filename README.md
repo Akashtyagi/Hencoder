@@ -8,7 +8,7 @@
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 
 ------------------------------------------------
-### Hencoder is a simple encoder based on greedy algorithim [Hauffman encoding](https://en.wikipedia.org/wiki/Huffman_coding).
+### Hencoder is a simple encoder based on greedy algorithim [Huffman encoding](https://en.wikipedia.org/wiki/Huffman_coding).
 
 
 ### ```pip install Hencoder```
