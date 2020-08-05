@@ -11,6 +11,7 @@
 ### Hencoder is a simple encoder based on greedy algorithim [Huffman encoding](https://en.wikipedia.org/wiki/Huffman_coding).
 
 
+
 ### ```pip install Hencoder```
 
 #### This package can be used to:
@@ -23,9 +24,10 @@ This file can be
 * Source code along with indentations.
 * Any other text that is readable by python.
 
+![Hencoder](https://github.com/Akashtyagi08/Hencoder/blob/master/demo/inplace.gif)
 ------------------------------------------------
 
-# Whats Great about Hencoder ? :star2:	
+# What's Great about Hencoder ? :star2:	
 
 > Hencoder makes sure that nobody else can decode your text other than you. :superhero:
 
@@ -33,7 +35,7 @@ Hencoder provides a feature to encode your input using a ```secret key```.
 
 This ```secret key``` ensures that no-one else can decode your encoded text until they know the key used for encoding the text.
 
-This secret key gets added to your original text, therefore correct decoding is only possible when user enters same key that was used while encoding.
+This secret key gets added to your original text, therefore correct decoding is only possible when the user enters the same key that was used while encoding.
 
 This key can be any value in range of `key = 1-100 ` .
 
@@ -41,7 +43,7 @@ This key can be any value in range of `key = 1-100 ` .
 >
 >   You can super encode your already encoded file with another key to make it even more difficult for someone to crack it.
 
-
+![Key](https://github.com/Akashtyagi08/Hencoder/blob/master/demo/variable_key.gif)
 # How to Use Hencoder ? :book:
 
 
@@ -69,3 +71,4 @@ Hencoder.decode(text="", key=0, path=None, inplace=False)
 * inplace: When coverting file, modify file inplace. 
 		{Default= False} (Optional)
 ```
+![File Encoding](https://github.com/Akashtyagi08/Hencoder/blob/master/demo/Hencoder.gif)
